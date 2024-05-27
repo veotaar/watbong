@@ -10,9 +10,9 @@ interface CategoryButtonProps {
 const CategoryButton = ({ name, image, target, description }: CategoryButtonProps) => {
   return (
     <Link to={target}>
-      <div className="relative mb-3 h-64 w-full overflow-hidden rounded-md bg-violet-700 shadow-md">
-        <img src={image} alt={name} className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+      <div className="relative mb-3 h-full w-full overflow-hidden rounded-md bg-accent shadow-md">
+        {image && <img src={image} alt={name} className="absolute inset-0 h-full w-full object-cover" />}
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60">
           <p className="pointer-events-none text-3xl font-bold text-white">{name}</p>
           {description && <p className="text-md pointer-events-none font-semibold italic text-white">{description}</p>}
         </div>
