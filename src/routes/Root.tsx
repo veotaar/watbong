@@ -20,14 +20,16 @@ function Root() {
         }}
       />
       <div className="grid h-64 w-full place-content-center overflow-hidden bg-neutral-900 shadow-md">
-        <img src="/images/68-wat-bong-logo.png" alt="wat bong logo" className="h-80 object-cover" />
+        <img src="./images/68-wat-bong-logo.png" alt="wat bong siem reap" className="h-80 object-cover" />
       </div>
-      <Outlet />
+      <section className="p-2 sm:p-8">
+        <Outlet />
+      </section>
 
       <footer className="footer bg-base-200 p-10 text-base text-base-content sm:text-lg">
         <section className="flex w-full justify-center gap-4">
-          <div>
-            <img src="/images/68-wat-bong-logo.png" alt="wat bong logo" className="h-64 w-40 object-cover" />
+          <div className="hidden sm:block">
+            <img src="./images/68-wat-bong-logo.png" alt="wat bong logo" className="h-64 w-40 object-cover" />
           </div>
           {/* prettier-ignore */}
           <nav>

@@ -4,7 +4,7 @@ import CategoryButton from '../components/CategoryButton';
 function Categories() {
   return (
     <>
-      <div className="flex w-full flex-col gap-3 p-3">
+      <div className="flex w-full flex-col gap-3">
         <h1 className="text-center text-3xl font-semibold">Menu</h1>
         <h2 className="text-center">Tap on categories to see more.</h2>
 
