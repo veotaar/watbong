@@ -621,14 +621,14 @@ const data: MenuData[] = [
     image: '/images/67-wine-frontera-sauvignon-blanc.png',
     category: 'wines',
     itemName: 'Frontera (Chile) Sauvignon Blanc',
-    description: 'Glass: 3.5 • Bottle: 14',
+    description: 'Glass: 3.5$ • Bottle: 14$',
   },
   {
     id: nanoid(10),
     image: '/images/66-wine-frontera-cabernet-sauvignon.png',
     category: 'wines',
     itemName: 'Frontera (Chile) Cabernet Sauvignon',
-    description: 'Glass: 3.5 • Bottle: 14',
+    description: 'Glass: 3.5$ • Bottle: 14$',
   },
   // --------------------------------
   // SPIRITS
@@ -899,6 +899,13 @@ const data: MenuData[] = [
     category: 'extras-3',
     itemName: '🌶️ Sriracha Mayo',
     price: 0.5,
+  },
+  // EXTRAS GROUP 4
+  {
+    id: nanoid(10),
+    category: 'extras-4',
+    itemName: 'Jasmine Rice',
+    price: 0.75,
   },
 ];
 

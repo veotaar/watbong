@@ -12,7 +12,7 @@ function GoBackButton({ displayImageInfoText = true }: GoBackButtonProps) {
         <SlArrowLeft />
         <p>Go back to main menu</p>
       </Link>
-      {displayImageInfoText && <p>Tap on images to enlarge / minimize.</p>}
+      {displayImageInfoText && <p className="text-sm">Tap on images to enlarge / minimize.</p>}
     </div>
   );
 }

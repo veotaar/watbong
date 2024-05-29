@@ -13,8 +13,12 @@ const CategoryButton = ({ name, image, target, description }: CategoryButtonProp
       <div className="relative mb-3 h-full w-full overflow-hidden rounded-md bg-secondary shadow-md">
         {image && <img src={`.${image}`} alt={name} className="absolute inset-0 h-full w-full object-cover" />}
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60">
-          <p className="pointer-events-none text-3xl font-bold text-white">{name}</p>
-          {description && <p className="text-md pointer-events-none font-semibold italic text-white">{description}</p>}
+          <p className="pointer-events-none text-3xl font-bold text-white max-[380px]:text-2xl">{name}</p>
+          {description && (
+            <p className="text-md pointer-events-none font-semibold italic text-white max-[380px]:hidden">
+              {description}
+            </p>
+          )}
         </div>
       </div>
     </Link>

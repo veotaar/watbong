@@ -17,6 +17,7 @@ const categories = {
   EXTRAS_1: 'extras-1',
   EXTRAS_2: 'extras-2',
   EXTRAS_3: 'extras-3',
+  EXTRAS_4: 'extras-4',
 };
 
 export default categories;

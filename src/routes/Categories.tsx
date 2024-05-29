@@ -4,10 +4,12 @@ function Categories() {
   return (
     <>
       <div className="flex w-full flex-col gap-3">
-        <h1 className="text-center text-3xl font-semibold">Menu</h1>
-        <h2 className="text-center">Tap on categories to see more.</h2>
+        <div>
+          <h1 className="text-center text-3xl font-bold text-cyan-800">Menu</h1>
+          <h2 className="text-center text-sm">Tap on categories to see more.</h2>
+        </div>
 
-        <div className="mt-4 flex gap-3">
+        <div className="mt-4 flex gap-3 max-[320px]:flex-col">
           <div className="h-64 w-full">
             <CategoryButton
               name="Burgers"
@@ -16,7 +18,7 @@ function Categories() {
               description="create your burger"
             />
           </div>
-          <div className="w-full">
+          <div className="h-64 w-full">
             <CategoryButton
               name="Sandwiches"
               image="/images/38-sw-omnimeat-kebab-sandwich-v.jpg"

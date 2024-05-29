@@ -3,14 +3,13 @@ import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { ScrollRestoration } from 'react-router-dom';
-import { themeChange } from 'theme-change';
+import { FiExternalLink } from 'react-icons/fi';
 
 function Root() {
   const navigate = useNavigate();
 
   useEffect(() => {
     navigate('/menu');
-    themeChange(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -24,8 +23,22 @@ function Root() {
       <div className="grid h-64 w-full place-content-center overflow-hidden bg-neutral-900 shadow-md">
         <img src="./images/68-wat-bong-logo.png" alt="wat bong siem reap" className="h-80 object-cover" />
       </div>
-      <section className="p-2 sm:p-8">
+      <section className="mb-8 p-2 sm:px-8 md:mx-auto md:max-w-screen-md">
         <Outlet />
+      </section>
+
+      <section className="bg-base-200">
+        <div className="p-10 text-center">
+          <Link
+            to="https://maps.app.goo.gl/cpqHxJDdx35PBJVz5"
+            className="btn btn-outline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Find us on Google Maps</p>
+            <FiExternalLink />
+          </Link>
+        </div>
       </section>
 
       <footer className="footer bg-base-200 p-10 text-base text-base-content sm:text-lg">
@@ -90,17 +103,6 @@ function Root() {
             </p>
           </nav>
         </section>
-        {/* <div></div>
-        <select className="gradientselect" data-choose-theme>
-          <option disabled value="">
-            Pick a theme
-          </option>
-          <option value="cupcake">Cupcake</option>
-          <option value="dim">Dim</option>
-          <option value="garden">Garden</option>
-          <option value="coffee">Coffee</option>
-          <option value="lemonade">Lemonade</option>
-        </select> */}
       </footer>
     </>
   );

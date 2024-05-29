@@ -11,7 +11,7 @@ function PageContent({ hasImages = true, title, category }: PageContentProps) {
   return (
     <div className="mb-4">
       <GoBackButton displayImageInfoText={hasImages} />
-      <h1 className="mb-2 text-center text-2xl font-bold">{title}</h1>
+      <h1 className="mb-2 text-center text-2xl font-bold text-cyan-800">{title}</h1>
       <MenuItemList category={category} />
     </div>
   );

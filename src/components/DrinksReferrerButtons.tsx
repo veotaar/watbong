@@ -9,7 +9,7 @@ interface DrinksReferrerButtonsProps {
 function DrinksReferrerButtons({ referrer, refName }: DrinksReferrerButtonsProps) {
   return (
     <>
-      <h2>Related:</h2>
+      <h2 className="mb-2 text-xl font-bold text-cyan-800">Related Pages:</h2>
       <div className="flex flex-col items-baseline gap-2">
         <Link className="btn btn-accent" to="/softdrinks" state={{ referrer, refName }}>
           <p>Soft Drinks</p>

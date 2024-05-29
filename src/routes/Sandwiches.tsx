@@ -7,9 +7,11 @@ function Sandwiches() {
   return (
     <>
       <PageContent title="Sandwiches" category={categories.SANDWICHES} />
-      <h1 className="mb-2 text-center text-2xl font-bold underline underline-offset-8">Extras</h1>
+      <h1 className="mb-2 text-center text-2xl font-bold text-cyan-800 underline underline-offset-8">Extras</h1>
       <MenuItemList category={categories.EXTRAS_2} />
       <MenuItemList category={categories.EXTRAS_3} />
+      <MenuItemList category={categories.EXTRAS_4} />
+
       <DrinksReferrerButtons refName="Sandwiches" referrer="/sandwiches" />
     </>
   );

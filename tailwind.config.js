@@ -13,7 +13,7 @@ export default {
     daisyui
   ],
   daisyui: {
-    themes: ["light", "dark", "garden", "coffee", "cupcake", "lofi", "dim", "lemonade"],
+    themes: ["cupcake"],
     // darkTheme: "dim"
   },
 }

@@ -13,7 +13,7 @@ function FreshJuice() {
       {state && (
         <Link className="btn btn-accent" to={state.referrer}>
           <SlArrowLeft />
-          <p>{state.refName}</p>
+          <p>Go Back to {state.refName}</p>
         </Link>
       )}
     </>
