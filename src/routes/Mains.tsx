@@ -1,18 +1,13 @@
-import { Link } from 'react-router-dom';
-import MenuItemList from '../components/MenuItemsList';
 import categories from '../data/categories';
+import PageContent from '../components/PageContent';
+import DrinksReferrerButtons from '../components/DrinksReferrerButtons';
 
 function Mains() {
   return (
-    <div>
-      <Link to="/menu" className="btn btn-primary">
-        Go back to main menu
-      </Link>
-      <p>Tap on images to enlarge / minimize.</p>
-      <h1 className="text-center text-xl">Mains</h1>
-      <hr />
-      <MenuItemList category={categories.MAINS} />
-    </div>
+    <>
+      <PageContent title="Mains" category={categories.MAINS} />
+      <DrinksReferrerButtons refName="Mains" referrer="/mains" />
+    </>
   );
 }
 

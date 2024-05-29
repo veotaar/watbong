@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import categories from '../data/categories';
+import PageContent from '../components/PageContent';
 
 function Soups() {
   return (
-    <div>
-      <Link to="/menu">Go back to main menu</Link>
-      <p>Soups route</p>
-    </div>
+    <>
+      <PageContent title="Soups" category={categories.SOUPS} />
+    </>
   );
 }
 

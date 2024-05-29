@@ -7,7 +7,7 @@ interface MenuItemListProps {
 
 function MenuItemList({ category }: MenuItemListProps) {
   return (
-    <div className="flex flex-col gap-2 sm:gap-3">
+    <div className="mb-8 flex flex-col gap-2 sm:gap-3">
       {data
         .filter((item) => item.category === category)
         .map((item) => (

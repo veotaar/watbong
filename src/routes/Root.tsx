@@ -3,12 +3,14 @@ import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { ScrollRestoration } from 'react-router-dom';
+import { themeChange } from 'theme-change';
 
 function Root() {
   const navigate = useNavigate();
 
   useEffect(() => {
     navigate('/menu');
+    themeChange(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -88,6 +90,17 @@ function Root() {
             </p>
           </nav>
         </section>
+        {/* <div></div>
+        <select className="gradientselect" data-choose-theme>
+          <option disabled value="">
+            Pick a theme
+          </option>
+          <option value="cupcake">Cupcake</option>
+          <option value="dim">Dim</option>
+          <option value="garden">Garden</option>
+          <option value="coffee">Coffee</option>
+          <option value="lemonade">Lemonade</option>
+        </select> */}
       </footer>
     </>
   );

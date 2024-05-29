@@ -14,6 +14,9 @@ const categories = {
   WINES: 'wines',
   BEERS: 'beers',
   COCKTAILS: 'cocktails',
+  EXTRAS_1: 'extras-1',
+  EXTRAS_2: 'extras-2',
+  EXTRAS_3: 'extras-3',
 };
 
 export default categories;

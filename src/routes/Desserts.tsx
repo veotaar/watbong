@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
+import { SlArrowRight } from 'react-icons/sl';
+import categories from '../data/categories';
+import PageContent from '../components/PageContent';
 
 function Desserts() {
   return (
-    <div>
-      <Link to="/menu">Go back to main menu</Link>
-      <p>Desserts route</p>
-    </div>
+    <>
+      <PageContent title="Desserts" category={categories.DESSERTS} />
+      <Link className="btn btn-accent" to="/coffeetea" state={{ referrer: '/desserts', refName: 'Desserts' }}>
+        <p>Coffee & Tea</p>
+        <SlArrowRight />
+      </Link>
+    </>
   );
 }
 

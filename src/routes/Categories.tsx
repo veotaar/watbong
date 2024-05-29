@@ -1,4 +1,3 @@
-import data from '../data/data';
 import CategoryButton from '../components/CategoryButton';
 
 function Categories() {
@@ -108,21 +107,6 @@ function Categories() {
           <CategoryButton name="Cocktails" target="/cocktails" />
         </div>
       </div>
-
-      {data
-        .filter((item) => item.category === 'burgers')
-        .map((item) => (
-          <div className="m-2 border border-base-content p-2" key={item.id}>
-            <img src={item.image} />
-            <p>id: {item.id}</p>
-            <p>category: {item.category}</p>
-            <p>itemName: {item.itemName}</p>
-            <p>description: {item.description ? item.description : 'no description'}</p>
-            <p>{`image name: ${item.image ? item.image : 'no image'}`}</p>
-            <p>isVegan: {item.isVegan ? 'vegan' : 'not specified'}</p>
-            <p>price: {item.price ? item.price : 'no price'}</p>
-          </div>
-        ))}
     </>
   );
 }

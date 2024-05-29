@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import categories from '../data/categories';
+import PageContent from '../components/PageContent';
 
 function Wines() {
   return (
-    <div>
-      <Link to="/menu">Go back to main menu</Link>
-      <p>Wines route</p>
-    </div>
+    <>
+      <PageContent title="Wines" category={categories.WINES} hasImages={false} />
+    </>
   );
 }
 

@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import categories from '../data/categories';
+import PageContent from '../components/PageContent';
 
 function Beers() {
   return (
-    <div>
-      <Link to="/menu">Go back to main menu</Link>
-      <p>Beers route</p>
-    </div>
+    <>
+      <PageContent title="Beers" category={categories.BEERS} />
+    </>
   );
 }
 
